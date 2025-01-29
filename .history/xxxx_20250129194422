@@ -1,0 +1,4 @@
+currying transforms a function that takes multiple arguments into series of function that takes one argument that takes one argument each 
+multiply(2,3,4)
+multiply(2)(2)(4)
+firstly the function should 

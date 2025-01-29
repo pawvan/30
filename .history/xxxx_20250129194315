@@ -1,0 +1,2 @@
+currying transforms a function that takes multiple arguments into series of function that takes one argument that takes one argument each 
+mu
