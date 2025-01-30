@@ -52,22 +52,9 @@ const curry  =(a)=>(b)=>( c )=> (
 console.log()
 const xx  =(...args)=>{
     if(args.length) return 1;
-    return args.reduce((acc,num)=> (
+    return args.reduce((acc,num)=>(
         typeof num === "function"  ?acc: acc*num
     ))
 
 }
-console.log( "lol", xx(3,4))
-function countFn(intialvalue){
-    let count =intialvalue
-    return function(){
-        count++;
-    }
-}
- let countFNN = countFn(1)
-countFNN()
-// const promise =  function(){
-    // return new Promise((req,res)=>{
-        // 
-    // })
-// }
+console.log( "" xx(3,4))

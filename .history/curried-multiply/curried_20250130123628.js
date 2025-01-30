@@ -44,7 +44,7 @@ console.log(curreidmultiply(5)(2)())
 //curring converts the high arity function ti unary function applied sequestily 
 //by means 
 const add  =(a) => (b) =>(c)=>a+b+c;
-console.log(add(2)(3)(5));
+console.log(add(2)(3)(5)());
 
 const curry  =(a)=>(b)=>( c )=> (
     (a*b)+c
@@ -52,22 +52,7 @@ const curry  =(a)=>(b)=>( c )=> (
 console.log()
 const xx  =(...args)=>{
     if(args.length) return 1;
-    return args.reduce((acc,num)=> (
-        typeof num === "function"  ?acc: acc*num
+    return args.reduce((acc,num)=>(
+        typeof num === "function"  : num ?
     ))
-
 }
-console.log( "lol", xx(3,4))
-function countFn(intialvalue){
-    let count =intialvalue
-    return function(){
-        count++;
-    }
-}
- let countFNN = countFn(1)
-countFNN()
-// const promise =  function(){
-    // return new Promise((req,res)=>{
-        // 
-    // })
-// }

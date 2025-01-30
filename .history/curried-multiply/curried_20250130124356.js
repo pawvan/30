@@ -66,8 +66,4 @@ function countFn(intialvalue){
 }
  let countFNN = countFn(1)
 countFNN()
-// const promise =  function(){
-    // return new Promise((req,res)=>{
-        // 
-    // })
-// }
+const promise =  

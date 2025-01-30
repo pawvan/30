@@ -58,16 +58,6 @@ const xx  =(...args)=>{
 
 }
 console.log( "lol", xx(3,4))
-function countFn(intialvalue){
-    let count =intialvalue
-    return function(){
-        count++;
-    }
+function countFn(){
+    
 }
- let countFNN = countFn(1)
-countFNN()
-// const promise =  function(){
-    // return new Promise((req,res)=>{
-        // 
-    // })
-// }
